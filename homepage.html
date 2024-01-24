@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Home Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .user-info {
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        .logout-btn {
+            background-color: #ff0000;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Welcome, John Doe</h1> <!-- Replace with the user's name -->
+        <div class="user-info">
+            <h2>Your Information:</h2>
+            <p><strong>Name:</strong> John Doe</p>
+            <p><strong>College:</strong> Sample College</p>
+            <p><strong>Course:</strong> Computer Science</p>
+            <p><strong>Year/Semester:</strong> 3rd Year</p>
+            <p><strong>Gender:</strong> Male</p>
+        </div>
+        <br>
+        <button class="logout-btn" onclick="logout()">Logout</button>
+    </div>
+
+    <!-- JavaScript (You can include this in a separate .js file) -->
+    <script>
+        function logout() {
+            // You can implement logout functionality here.
+            // Typically, you'd send a request to the server to invalidate the session or remove the user's token.
+            // Then, redirect the user to the login page.
+            window.location.href = "login.html"; // Replace with your login page URL
+        }
+    </script>
+</body>
+
+</html>
